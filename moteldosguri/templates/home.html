@@ -1,79 +1,56 @@
 {% extends "base.html" %}
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOTEL DOS GURI</title>
-  <link rel="stylesheet" href="assets/style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <h1>MOTEL DOS GURI</h1>
-      </div>
-    </nav>
-  </header>
-  <nav class="menu">
-  <ul>
-    <li><a href="#">Contatos</a></li>
-    <li><a href="#">Cardápios</a></li>
-    <li><a href="#">Reserve pelo WhatsApp</a></li>
-  </ul>
-  </nav>
+
+
+{% block content%}
   <main>
     <h3 class="suites">Suítes para todos os gostos</h3>
     <div class="container-cards">
       <div class="card">
         <h2>Suíte Afrodit</h2>
-        <img class="img-suites" src="img/afrodit.jpeg" alt="">
+        <img class="img-suites" src="../static/afrodit.jpeg" alt="">
         <a href="suite_afrodit.html"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Intense</h2>
-        <img class="img-suites" src="img/intense.jpg" alt="">
+        <img class="img-suites" src="../static/img/intense.jpg" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Eros</h2>
-        <img class="img-suites" src="img/eros.jpeg" alt="">
+        <img class="img-suites" src="../static/img/eros.jpeg" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Iris</h2>
-        <img class="img-suites" src="img/iris.jpeg" alt="">
+        <img class="img-suites" src="../static/img/iris.jpeg" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Lumini</h2>
-        <img class="img-suites" src="img/lumini.jpeg" alt="">
+        <img class="img-suites" src="../static/img/lumini.jpeg" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Luzes</h2>
-        <img class="img-suites" src="img/luzes.png" alt="">
+        <img class="img-suites" src="../static/img/luzes.png" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Magic</h2>
-        <img class="img-suites" src="img/magic.png" alt="">
+        <img class="img-suites" src="../static/img/magic.png" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Sensação</h2>
-        <img class="img-suites" src="img/sensação.jpg" alt="">
+        <img class="img-suites" src="../static/img/sensacao.jpg" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Vibes</h2>
-        <img class="img-suites" src="img/vibes.jpeg" alt="">
+        <img class="img-suites" src="../static/img/vibes.jpeg" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
     </div>
   </main>
-  <footer>
-    <h4>Aplicação Web desenvolvida por Wesllen Brasil, Juan de Souza, Luiz Otavio e Luiz Gustavo (Alunos de Senac Niterói)</h4>
-  </footer>
-</body>
-</html>
+
+{% endblock %}
