@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block content%}
   <main>
@@ -7,47 +7,47 @@
     <div class="container-cards">
       <div class="card">
         <h2>Suíte Afrodit</h2>
-        <img class="img-suites" src="../static/afrodit.jpeg" alt="">
+        <img class="img-suites" src="{% static 'img/afrodit.jpeg' %}" alt="">
         <a href="suite_afrodit.html"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Intense</h2>
-        <img class="img-suites" src="../static/img/intense.jpg" alt="">
+        <img class="img-suites" src="{% static 'img/intense.jpg' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Eros</h2>
-        <img class="img-suites" src="../static/img/eros.jpeg" alt="">
+        <img class="img-suites" src="{% static 'img/eros.jpeg' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Iris</h2>
-        <img class="img-suites" src="../static/img/iris.jpeg" alt="">
+        <img class="img-suites" src="{% static 'img/iris.jpeg' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Lumini</h2>
-        <img class="img-suites" src="../static/img/lumini.jpeg" alt="">
+        <img class="img-suites" src="{% static 'img/lumini.jpeg' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Luzes</h2>
-        <img class="img-suites" src="../static/img/luzes.png" alt="">
+        <img class="img-suites" src="{% static 'img/luzes.png' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Magic</h2>
-        <img class="img-suites" src="../static/img/magic.png" alt="">
+        <img class="img-suites" src="{% static 'img/magic.png' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Sensação</h2>
-        <img class="img-suites" src="../static/img/sensacao.jpg" alt="">
+        <img class="img-suites" src="{% static 'img/sensacao.jpg' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
       <div class="card">
         <h2>Suíte Vibes</h2>
-        <img class="img-suites" src="../static/img/vibes.jpeg" alt="">
+        <img class="img-suites" src="{% static 'img/vibes.jpeg' %}" alt="">
         <a href="#"><button>Reservar Suíte</button></a>
       </div>
     </div>
