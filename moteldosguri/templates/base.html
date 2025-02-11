@@ -1,5 +1,3 @@
-
-
 {% load bootstrap5 %}
 {% bootstrap_css %}
 {% bootstrap_javascript %} 
@@ -23,9 +21,12 @@
           </header>
           <nav class="menu">
           <ul>
+            {% if boleano == 1 %}
+            <li><a href="{% url 'home'%}">Home</a></li>
+            {% endif %}            
             <li><a href="#">Contatos</a></li>
             <li><a href="#">Cardápios</a></li>
-            <li><a href="#">Reserve pelo WhatsApp</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5521965958206&text=Ol%C3%A1,%20Gostaria%20de%20saber%20mais%20sobre%20as%20su%C3%ADtes%20!" target="_blank">WhatsApp</a></li>
           </ul>
           </nav>
   <main>
@@ -34,7 +35,7 @@
   </main> 
 
   <footer>
-      <h4>Aplicação Web desenvolvida por Wesllen Brasil, Juan de Souza, Luiz Otavio e Luiz Gustavo (Alunos de Senac Niterói)</h4>
+      <h4>Aplicação Web desenvolvida por Wesllen Brasil, Juan de Souza, Luiz Otavio e Luis Gustavo (Alunos de Senac Niterói)</h4>
   </footer>
 </body>
 </html>

@@ -16,10 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from moteldosguri.views import home, pag_afrodite, cadastro, cadastroC
+from moteldosguri.views import home, pag_afrodite,pag_eros,pag_intence, cadastro, pag_iris, pag_lumini, pag_luzes, pag_magic, pag_sensacao, pag_vibes
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path('', intro, name='intro'),
     path("", home, name='home'),
-    path('suite_afrodit.html', pag_afrodite, name='afrodite'),
-    path('cadastro/', cadastro, name='cadastro')
+    path("home/", home, name='home'),
+    path('suite_afrodit/',pag_afrodite, name='afrodite'),
+    path('suite_eros/', pag_eros, name = 'eros'),
+    path('suite_intence/', pag_intence, name='intence' ),
+    path('suite_iris/', pag_iris, name='iris'),
+    path('suite_lumini/', pag_lumini, name='lumini'),
+    path('suite_luzes/', pag_luzes, name='luzes'),
+    path('suite_magic/',pag_magic, name='magic' ),
+    path('suite_sensacao/',pag_sensacao, name='sensacao'),
+    path('suite_vibes/', pag_vibes, name='vibes'),
+    path('cadastro/', cadastro, name='cadastro'),
 ]

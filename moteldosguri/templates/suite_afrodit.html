@@ -2,7 +2,38 @@
 
 {% block title %} afrodit {% endblock %}
 
-{% block content %}
 
-  <h1>conteudo vai aqui </h1>
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Afrodite</h3>
+        <p>Considerada a personificação do ideal de beleza, Afrodit dá nome a essa linda suíte. Cama king size,<br>
+          uma confortável hidro para você relaxar da maneira que você merece. Tudo como Afrodite gosta: beleza, sedução e charme.</p>
+      </div>
+
+    <div class="img-suites1">
+      <img src="{% static 'img/afrodit1.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/afrodit2.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/afrodit3.jpeg' %}" alt="" style=border-radius:20px;>
+    </div>
+
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>Ar condicionado</h6>
+      <h6>Banheiro Privativo</h6>
+      <h6>Frigobar</h6>
+      <h6>Garagem Privativa</h6>
+      <h6>Hidromassagem</h6>
+      <h6>Iluminação em led com opções de cores</h6>  
+      <h6>Sala de Refeição</h6>
+      <h6>Som fm c/ entrada para pendrive e 500 músicas</h6>
+      <h6>Som JBL Bluetooth</h6>
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Wi-Fi</h6>
+    </div>
+  </div>
+</main>
 {% endblock %}
