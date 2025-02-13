@@ -2,8 +2,43 @@
 
 {% block title %} afrodit {% endblock %}
 
-{% block content %}
 
-  <h1>conteudo vai aqui </h1>
-  
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Iris</h3>
+        <p>Suíte em homenagem a Deusa Iris, a deusa do arco-íris, essa suíte é repleta de cor e muitos espelhos. <br>
+          A parte externa conta com piscina aquecida com cascata e cama exterior.</p>
+      </div>
+
+    <div class="img-suites1">
+      <img src="{% static 'img/Iris_1.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Iris_2.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Iris_3.jpeg' %}" alt="" style=border-radius:20px;>
+    </div>
+
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>2 camas</h6>
+      <h6>Ar condicionado Split</h6>
+      <h6>Banheiro Privativo</h6>
+      <h6>Cama king</h6>
+      <h6>Espelho no teto e paredes c iluminação especial</h6>
+      <h6>Frigobar</h6>
+      <h6>Garagem Privativa</h6>  
+      <h6>Iluminação em led com opções de cores</h6>
+      <h6>Luz negra</h6>
+      <h6>Pendente com iluminação especial</h6>
+      <h6>Piscina aquecida com hidro relaxante e jatos massageadores</h6>
+      <h6>Sala de Refeição</h6>
+      <h6>Som FM e JBL com conexão Bluetooth</h6>
+      <h6>Teto Solar retrátil</h6>
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Wi-Fi</h6>
+    </div>
+  </div>
+</main>
 {% endblock %}

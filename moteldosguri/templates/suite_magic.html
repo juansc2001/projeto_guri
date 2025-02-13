@@ -2,8 +2,39 @@
 
 {% block title %} afrodit {% endblock %}
 
-{% block content %}
 
-  <h1>conteudo vai aqui </h1>
-  
-{% endblock %} 
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Magic</h3>
+        <p>Tudo o que você sonhou para uma suíte você vai encontrar aqui na Magic. <br>
+          Idealizamos um ambiente elegante onde você poderá relaxar, tomar um drink e curtir a piscina <br>
+          Pensando em todo o seu conforto, toda a iluminação da suíte pode ser feita por controle de voz para a Alexa,<br>
+           além da Amazon Music disponível para que você possa escolher a trilha sonora perfeita para seu momento. A mágica começa aqui!</p>
+      </div>
+
+    <div class="img-suites1">
+      <img src="{% static 'img/Magic_1.png' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Magic_2.png' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Magic_3.png' %}" alt="" style=border-radius:20px;>
+    </div>
+
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>2 camas</h6>
+      <h6>Ar Condicionado</h6>
+      <h6>Banheiro Privativo</h6>
+      <h6>Frigobar</h6>
+      <h6>Piscina Aquecida com Hidro Relaxante</h6>
+      <h6>Sauna a Vapor</h6>  
+      <h6>Som JBL Bluetooth</h6>
+      <h6>Sala de Refeição</h6>
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Wi-Fi</h6>
+    </div>
+  </div>
+</main>
+{% endblock %}

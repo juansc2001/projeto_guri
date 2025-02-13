@@ -1,28 +1,34 @@
 from django.shortcuts import render, redirect
-from .models import Clientes, Contato
+from .models import Clientes
 from .forms import ClientesForm
 
 def home(request):
     bulle = 0
     return render(request,'home.html', {'boleano': bulle })
 
+def pag_contatos(request):
+    return render(request, 'contatos.html')
 
-def intro(request):
-    return render(request, 'intro.html')
+def pag_cardapio(request):
+    return render(request, 'cardapio.html')
+
 
 def pag_afrodite(request):
     if request == True:
         bulle = 0
     else:
         bulle = 1
-    return render(request, 'suite_afrodit.html', {'boleano': bulle })
+    
+    
+    return render(request, 'suite_afrodit.html', {'boleano': bulle})
 
 def pag_eros(request):
     if request == True:
         bulle = 0
     else:
         bulle = 1
-    return render(request, 'suite_eros.html', {'boleano': bulle })
+
+    return render(request, 'suite_eros.html', {'boleano': bulle})
 
 def pag_intence(request):
     if request == True:
@@ -74,11 +80,16 @@ def pag_vibes(request):
     return render(request, 'suite_vibes.html', {'boleano':bulle })
 
 
-def cadastroC(request):
+def check(request):
     client_list = Clientes.objects.all()
-    return render(request, "reserva.html", {'cliente': client_list})
+    return render(request, "check.html", {'cliente': client_list})
 
 def cadastro(request):
+    if request == True:
+        bulle = 0
+    else:
+        bulle = 1
+
     if request.method == 'POST':
         form = ClientesForm(request.POST)
         if form.is_valid():
@@ -86,7 +97,7 @@ def cadastro(request):
             return redirect('home')
     else:
         formulario = ClientesForm()
-        return render(request, 'cadastro.html', {'form': formulario})
+        return render(request, 'cadastro.html', {'form': formulario, 'boleano':bulle })
 
-    
+
 # Create your views here.

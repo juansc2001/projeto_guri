@@ -2,8 +2,35 @@
 
 {% block title %} afrodit {% endblock %}
 
-{% block content %}
 
-  <h1>conteudo vai aqui </h1>
-  
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Lumini</h3>
+        <p>Venha conhecer a nossa suíte com iluminação de Led para deixar o ambiente ainda mais charmoso.</p>
+      </div>
+
+    <div class="img-suites1">
+      <img src="{% static 'img/Lumini_1.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Lumini_2.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Lumini_3.jpeg' %}" alt="" style=border-radius:20px;>
+    </div>
+
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>Banheiro Privativo</h6>
+      <h6>Cadeira ou Cavalo Erótico - consultar disponibilidade</h6>
+      <h6>Frigobar</h6>
+      <h6>Iluminação em led com opções de cores</h6>
+      <h6>Sala de Refeição</h6>
+      <h6>Som fm c/ entrada para pendrive e 500 músicas - consultar disponibilidade</h6>  
+      <h6>Som JBL Bluetooth</h6>
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Wi-Fi</h6>
+    </div>
+  </div>
+</main>
 {% endblock %}

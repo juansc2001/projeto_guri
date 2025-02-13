@@ -1,9 +1,14 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-    <form method="post">        
+    <form method="post" class="formstyle">        
         {% csrf_token %}
         {{ form }}        
-        <button type="submit" class="btn btn-primary btn-block mt-3 form-group"> Enviar </button>
+        <a href="{% url 'check'%}"><button type="submit" class="btn btn-primary btn-block mt-3 form-group">Enviar </button></a>
     </form>
+   
+    {% block botao %}
+        <!--some com o botao q vai em todas as suites-->
+    {% endblock%}
 {% endblock %}

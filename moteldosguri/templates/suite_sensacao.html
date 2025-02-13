@@ -2,8 +2,39 @@
 
 {% block title %} afrodit {% endblock %}
 
-{% block content %}
 
-  <h1>conteudo vai aqui </h1>
-  
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Sensação</h3>
+        <p>Descubra a experiência incomparável da Suíte Sensação! Um ambiente pensado para unir conforto,<br>
+           tecnologia e beleza em cada detalhe. Com cama King, ar-condicionado split e uma incrível hidromassagem,<br>
+            você desfruta de momentos de puro relaxamento. A tecnologia está ao seu alcance com som Bluetooth para conectar o celular e a Alexa,<br>
+             que torna tudo mais prático e interativo. A iluminação especial em LED e luz negra completa o cenário, <br>
+             criando uma atmosfera perfeita para todas as ocasiões. Venha viver essa sensação única!</p>
+      </div>
+
+    <div class="img-suites1">
+      <img src="{% static 'img/Sensacao_1.jpg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Sensacao_2.jpg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Sensacao_3.jpg' %}" alt="" style=border-radius:20px;>
+    </div>
+
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>Som com Bluetooth p conexão do celular</h6>
+      <h6>Alexa</h6>
+      <h6>Cama King</h6>
+      <h6>Ar Split</h6>
+      <h6>Iluminação especial de led</h6>
+      <h6>Luz negra</h6>  
+      <h6>Hidromassagem</h6>
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Wi-Fi</h6>
+    </div>
+  </div>
+</main>
 {% endblock %}

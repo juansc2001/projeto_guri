@@ -2,8 +2,44 @@
 
 {% block title %} afrodit {% endblock %}
 
-{% block content %}
 
-  <h1>conteudo vai aqui </h1>
-  
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Intense</h3>
+        <p>Na Suíte Intense, você será envolvido por uma atmosfera de beleza, conforto e sofisticação, <br>
+          projetada para atender aos mais exigentes gostos.</p>
+      </div>
+
+    <div class="img-suites1">
+      <img src="{% static 'img/Intense_1.jpg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Intense_2.jpg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Intense_3.jpg' %}" alt="" style=border-radius:20px;>
+    </div>
+
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>2 duchas</h6>
+      <h6>Ar condicionado Split</h6>
+      <h6>Banheiro Privativo</h6>
+      <h6>Cama king</h6>
+      <h6>Espelho redondo c iluminação especial</h6>
+      <h6>Frigobar</h6>  
+      <h6>Garagem Privativa</h6>
+      <h6>Hidromassagem</h6>
+      <h6>Hidromassagem c Iluminação especial</h6>
+      <h6>Iluminação em led com opções de cores</h6>
+      <h6>Luz negra</h6>
+      <h6>Mesa de refeição dentro da suíte</h6>
+      <h6>Pagamento privativo (sem contato)</h6>
+      <h6>Pendente com iluminação especial</h6>
+      <h6>Som FM e JBL com conexão Bluetooth</h6>
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Tv Smart</h6>
+    </div>
+  </div>
+</main>
 {% endblock %}

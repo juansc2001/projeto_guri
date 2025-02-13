@@ -2,12 +2,38 @@
 
 {% block title %} afrodit {% endblock %}
 
+
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Eros</h3>
+        <p>Eros ou O Cupido, é filho de Afrodite, e como a mãe, seu objetivo é deixar as pessoas apaixonadas. <br>
+          E quem não vai se apaixonar com uma suíte dessas. Sauna, painel de led com bolhas, piscina aquecida com mega jatos <br>
+          massageadores e muito, mas muito mais.</p>
+      </div>
 
-  <h1>conteudo vai aqui </h1>
+    <div class="img-suites1">
+      <img src="{% static 'img/Eros_1.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Eros_2.jpeg' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Eros_3.jpeg' %}" alt="" style=border-radius:20px;>
+    </div>
 
-    {% if boleano == 0 %}
-    <h1>teste funcionou</h1>
-    {% endif %}
-  
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>2 camas</h6>
+      <h6>Ar condicionado</h6>
+      <h6>Banheiro Privativo</h6>
+      <h6>Frigobar</h6>
+      <h6>Piscina aquecida com hidro relaxante e jatos massageadores</h6>
+      <h6>Sala de Refeição</h6>  
+      <h6>Sauna a vapor</h6>
+      <h6>Som JBL Bluetooth</h6>
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Wi-Fi</h6>
+    </div>
+  </div>
+</main>
 {% endblock %}

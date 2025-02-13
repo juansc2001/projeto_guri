@@ -2,8 +2,36 @@
 
 {% block title %} afrodit {% endblock %}
 
-{% block content %}
 
-  <h1>conteudo vai aqui </h1>
-  
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+  <div class="content-suites">
+      <div class="cabecalho">
+        <h3>Suíte Luzes</h3>
+        <p>A Suíte Luzes oferece uma experiência única com iluminação especial de LED e luz negra,<br>
+           criando um ambiente moderno e envolvente. Perfeita para momentos especiais em um clima cheio de estilo e conforto.</p>
+      </div>
+
+    <div class="img-suites1">
+      <img src="{% static 'img/Luzes_1.png' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Luzes_2.png' %}" alt="" style=border-radius:20px;>
+      <img src="{% static 'img/Luzes_3.png' %}" alt="" style=border-radius:20px;>
+    </div>
+
+    <div class="descricao">
+      <h3>Você vai encontrar</h3>
+      <h6>Cama king</h6>
+      <h6>ar split de 18</h6>
+      <h6>Alexa c amazon music</h6>
+      <h6>Sound bar c Bluetooth</h6>
+      <h6>varias opções de iluminação</h6>
+      <h6>cavalinho erótico</h6>  
+      <h6>Tv 4k com Sky (esporte, filmes)</h6>
+      <h6>Wi-Fi</h6>
+
+    </div>
+  </div>
+</main>
 {% endblock %}
