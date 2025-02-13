@@ -5,7 +5,7 @@ from datetime import datetime
 class Clientes(models.Model):
     nome = models.CharField(max_length=100, null=False, blank=False)
     data = models.DateField(default=datetime(2012, 12, 12).date(), null=False, blank=False)
-    horario = models.DateTimeField()
+    horario = models.TimeField()
     mensagem = models.CharField(max_length=100, null=False, blank=False)
     
     #Adicione esta fução para exibir o nome dos alunos dentro do painel administrativo#

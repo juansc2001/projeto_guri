@@ -85,19 +85,21 @@ def check(request):
     return render(request, "check.html", {'cliente': client_list})
 
 def cadastro(request):
+    '''
     if request == True:
         bulle = 0
     else:
         bulle = 1
-
+    '''
     if request.method == 'POST':
         form = ClientesForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('home')
     else:
-        formulario = ClientesForm()
-        return render(request, 'cadastro.html', {'form': formulario, 'boleano':bulle })
+        form = ClientesForm()
+    
+    return render(request, 'cadastro.html', {'form': form})
 
 
 # Create your views here.
