@@ -10,7 +10,12 @@ def pag_contatos(request):
     return render(request, 'contatos.html')
 
 def pag_cardapio(request):
-    return render(request, 'cardapio.html')
+    if request == True:
+        bulle = 0
+    else:
+        bulle = 1
+
+    return render(request, 'cardapio.html', {'boleano': bulle })
 
 
 def pag_afrodite(request):
