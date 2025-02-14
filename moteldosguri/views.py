@@ -2,6 +2,9 @@ from django.shortcuts import render, redirect
 from .models import Clientes
 from .forms import ClientesForm
 
+def intro(request):
+    return render(request,'intro.html')
+
 def home(request):
     bulle = 0
     return render(request,'home.html', {'boleano': bulle })

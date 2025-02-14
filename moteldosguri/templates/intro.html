@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .apresentacao {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px; /* Reduced margin */
+            margin: 0 20px;
+            width: 100%; /* Occupy most of the screen width */
+            max-width: 100%;; /* Set a maximum width */
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center; /* Center the logos */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logos img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 10px; /* Space between logos */
+        }
+
+        .membros {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping to the next line */
+            justify-content: center; /* Center the member divs */
+        }
+
+        .membro { /* Individual member container */
+            margin: 10px;
+            text-align: center; /* Center text within each member */
+        }
+
+        .fotos {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 10px; /* Space below the image */
+        }
+
+        button {
+            background-color: #7037cd;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px; /* Space below the button */
+        }
+
+        button:hover {
+            background-color: #7037cd;
+            opacity: 85%;
+        }
+    </style>
+</head>
+<body>
+    <div class="apresentacao ">
+        <div class="logos">
+            <img src="{% static 'img/logo.png' %}" alt="logo">
+            <h1>Seja bem vindo ao Projeto da equipe Guri Tech</h1>
+            <img src="{% static 'img/logoguri.png' %}" alt="logo">
+        </div>
+
+        <div class="membros">  <div class="membro">
+                <img class="fotos" style=" margin-left: 50px; margin-right: 50px;" src="{% static 'img/Wesllen-foto.jpg'%}" alt="Wesllen">
+                <h3>Wesllen brasil <br>(FRONT-END)</h3>
+            </div>
+            <div class="membro" style=" margin-left: 50px; margin-right: 50px;">
+                <img class="fotos"  src="{% static 'img/Juan.jpg'%}" alt="Juan">
+                <h3>Juan de Souza <br>(BACK-END)</h3>
+            </div>
+            <div class="membro">
+                <img class="fotos" style=" margin-left: 50px; margin-right: 50px;" src="{% static 'img/Gustavo.jpg' %}" alt="Gustavo">
+                <h3>Luis Gustavo <br>(FRONT-END E BACK-END)</h3>
+            </div>
+            <div class="membro" style=" margin-left: 50px; margin-right: 50px;">
+                <img class="fotos"  src="{% static 'img/Wesllen-foto.jpg'%}" alt="Luis">  
+                <h3>Luiz Otavio <br>(BACK-END)</h3>
+            </div>
+        </div>
+    </div>
+
+    <a href="{% url 'home'%}"><button style=" margin-top: 20px;">VER PROJETO</button></a>
+</body>
+</html>
