@@ -24,13 +24,6 @@ header{
     padding: 20px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
 .logo {
     margin: 0 auto;
 }
@@ -109,7 +102,7 @@ nav a:hover{
     flex-wrap: wrap;
     justify-content: center;
 }
-  
+
 .card {
     text-align: center;
     padding: 50px;
@@ -151,6 +144,7 @@ nav a:hover{
 }
 
 footer{
+    font-size: ;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -224,15 +218,20 @@ footer{
     margin-bottom: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.cardapio img:hover{
+    transform: rotate(1deg);
+    border: 3px solid rgba(0, 0, 0, 0.1)
+}
   
-.cardapio h2 {
+.cardapio h2, h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
-
+  
 .cardapio-h3{
     display: flex;
     justify-content: center;
@@ -241,17 +240,22 @@ footer{
     margin-bottom: 10px;
 }
 
-/* Responsivo
-@media (min-width: 768px) {
-  .container {
-    width: 80%;
-  }
+.h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 10px;
 }
 
-/* Estilos para telas com largura menor que 768px */
-@media (max-width: 767px) {
-    .container {
-      width: 90%;
+@media(mix-width: 500px){
+    img-suites{
+        width: 100px ;
+        height: 100px ;
     }
-  }
-  
+
+    .card button{
+        width: 10vw;
+    }
+
+}

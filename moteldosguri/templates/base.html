@@ -8,13 +8,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{% static 'style.css' %}">
-
+  <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
   <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
           <header>
               <div class="logo">
-                <img src="{% static 'img/motel do guri.png' %}" alt="logo">
+                <img src="{% static 'img/logoguri.png' %}" alt="logo">
               </div>
           </header>
           <nav class="menu">
@@ -33,7 +33,12 @@
 
     {% block botao %}
       {% if boleano == 1 %}<!--se estivermos nas paginas da suite faça: -->
-        <a href=" {% url 'cadastro' %}"><button type="submit" class="btn-reserva">Reservar</button></a>
+        {% if botao == 'mudar'%}
+          <a href="#"><button type="submit" class="btn-reserva">fazer pedido</button></a>
+        {% else %}
+          <a href=" {% url 'cadastro' %}"><button type="submit" class="btn-reserva">Reservar</button></a>
+        {% endif%}
+      
       {% endif %}
     {% endblock %}    
     
@@ -41,7 +46,8 @@
 
   <footer>
       <img class="logo-footer" src="{% static 'img/logo.png' %}" alt="logo">
-      <h4>Aplicação Web desenvolvida por Wesllen Brasil, Juan de Souza, Luiz Otavio e Luis Gustavo (Alunos de Senac Niterói)</h4>
+      <p>Aplicação Web desenvolvida por Wesllen Brasil, Juan de Souza, Luiz Otavio e Luis Gustavo (Alunos de Senac Niterói)</p>
+      <img class="logo-footer" src="{% static 'img/logoguri.png' %}" alt="logo">
   </footer>
 </body>
 </html>

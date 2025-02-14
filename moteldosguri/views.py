@@ -14,8 +14,11 @@ def pag_cardapio(request):
         bulle = 0
     else:
         bulle = 1
+    
+    buttton = 'mudar'
 
-    return render(request, 'cardapio.html', {'boleano': bulle })
+
+    return render(request, 'cardapio.html', {'boleano': bulle, 'botao':buttton })
 
 
 def pag_afrodite(request):
