@@ -11,7 +11,7 @@ class Clientes(models.Model):
     #Adicione esta fução para exibir o nome dos alunos dentro do painel administrativo#
     #Veremos isso mais a frente
     def __str__(self):
-        return self.nome
+        return f"{self.nome} marcou para o dia {self.data} às {self.horario}"
     
 class Contato(models.Model):
     nome = models.CharField(max_length=100, null=False, blank=False)

@@ -1,8 +1,98 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block content %}
-
-  <h1>cardapio vai aqui </h1>
-  
+<body>
+  <main>
+    <section class="banner">
+      <h1>Cardapio</h1>
+      <p>Peça agora e aproveite!</p>
+    </section>
+    <section class="cardapio">
+      <h2>Comidas</h2>
+      <ul>
+        <li>
+          <img src="{% static 'img/comida.jpg' %}" alt="jantar">
+          <h3>Jantar</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/pastel.jpg' %}" alt="pastel">
+          <h3>Pastel</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/pizza.jpg' %}" alt="Pizza">
+          <h3>Pizza</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/hamburguer.jpg' %}" alt="Hamburguer">
+          <h3>Hamburguer</h3>
+          <p>R$ 15,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/batata.jpg' %}" alt="Batata">
+          <h3>Batata Frita</h3>
+          <p>R$ 10,00</p>
+        </li>
+      </ul>
+      <h2>Bebidas</h2>
+      <ul>
+        <li>
+          <img src="{% static 'img/agua.jpg' %}" alt="agua">
+          <h3>Agua</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/fanta.jpg' %}" alt="fanta">
+          <h3>Fanta Laranja</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/vinho.jpg' %}" alt="vinho">
+          <h3>Vinho</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/vodka.jpg' %}" alt="vodka">
+          <h3>Vodka</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/wisky.jpg' %}" alt="wisky">
+          <h3>Wisky</h3>
+          <p>R$ 20,00</p>
+        </li>
+      </ul>
+      <h2>doce</h2>
+      <ul>
+        <li>
+          <img src="{% static 'img/agua.jpg' %}" alt="agua">
+          <h3>Agua</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/fanta.jpg' %}" alt="fanta">
+          <h3>Fanta Laranja</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/vinho.jpg' %}" alt="vinho">
+          <h3>Vinho</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/vodka.jpg' %}" alt="vodka">
+          <h3>Vodka</h3>
+          <p>R$ 20,00</p>
+        </li>
+        <li>
+          <img src="{% static 'img/wisky.jpg' %}" alt="wisky">
+          <h3>Wisky</h3>
+          <p>R$ 20,00</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 {% endblock %} 

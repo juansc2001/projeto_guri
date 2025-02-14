@@ -85,21 +85,26 @@ def check(request):
     return render(request, "check.html", {'cliente': client_list})
 
 def cadastro(request):
-    '''
+
     if request == True:
         bulle = 0
     else:
         bulle = 1
-    '''
+    
     if request.method == 'POST':
         form = ClientesForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('home')
+            data = form.cleaned_data['data']
+            horario = form.cleaned_data['horario']
+            if Clientes.objects.filter(data=data, horario=horario).exists():
+                form.add_error(None, "Este horário já está reservado.")
+            else:
+                form.save()
+                return redirect('home')
     else:
         form = ClientesForm()
     
-    return render(request, 'cadastro.html', {'form': form})
+    return render(request, 'cadastro.html', {'form': form, 'boleano':bulle})
 
 
 # Create your views here.
